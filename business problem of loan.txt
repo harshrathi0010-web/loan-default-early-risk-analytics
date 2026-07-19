@@ -1,0 +1,15 @@
+Business Problem
+
+Lending platforms lose money primarily through loan defaults, and generic "approve or deny" criteria don't capture which borrower combinations are actually risky.
+This project analyzes a ~12,000-loan LendingClub-style portfolio to identify high-risk borrower segments and recommend concrete underwriting and credit-limit policy
+changes that a risk/underwriting team could act on.
+
+
+Key challenge discovered during analysis: the dataset represents a young loan book — 97.8% of loans are still Current, with almost no completed Charged Off outcomes.
+Rather than force a traditional (and statistically unreliable) default-prediction model on this data, the project pivots to an early-risk / delinquency-detection framing
+— flagging loans already showing distress signals (late payments, grace period, charge-off) to catch risk before it fully materializes.
+
+This is arguably more useful in practice than a lagging default model, since it enables intervention while a loan is still salvageable.
+Deliverable: an end-to-end analytics pipeline — Python ETL/EDA → SQL business-question layer  → interactive Streamlit dashboard
+→ deployed live (Streamlit Community Cloud, then AWS EC2/Elastic Beanstalk + S3) — packaged as a documented case study 
+Problem → Approach → Key Numbers → Recommendation).
