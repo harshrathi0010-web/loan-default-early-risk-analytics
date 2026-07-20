@@ -10,6 +10,6 @@ Rather than force a traditional (and statistically unreliable) default-predictio
 — flagging loans already showing distress signals (late payments, grace period, charge-off) to catch risk before it fully materializes.
 
 This is arguably more useful in practice than a lagging default model, since it enables intervention while a loan is still salvageable.
-Deliverable: an end-to-end analytics pipeline — Python ETL/EDA → SQL business-question layer  → interactive Streamlit dashboard
-→ deployed live (Streamlit Community Cloud, then AWS EC2/Elastic Beanstalk + S3) — packaged as a documented case study 
+Deliverable: an end-to-end analytics pipeline — Python ETL/EDA → SQL business-question layer  → reporting dashboard by power BI
+→  — packaged as a documented case study
 Problem → Approach → Key Numbers → Recommendation).
